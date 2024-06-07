@@ -49,6 +49,14 @@ body {
   font-size: 30px;
   padding: 0.9rem 0;
 }
+@media (min-width:768px) {
+  #mainNav .navbar-nav {
+    position: relative;
+    right: 33rem;
+  }
+
+  
+}
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(#fff, 80%);
   outline: none;
@@ -283,7 +291,7 @@ color: #111;
   background-color: var(--color-primary);
   padding: 12px;
   color: #fff;
-  text-align: end;
+  padding-right: 1.5rem;
 }
 .place h3 {
   font-size: var(--font-size-title);
@@ -312,7 +320,6 @@ color: #111;
 }
 .place-body h4 {
   font-size: var(--font-size-text);
-  text-transform: uppercase;
   
 }
 
@@ -374,7 +381,6 @@ color: #111;
   color: #fff;
   font-size: 18px;
   line-height: 1.6;
-  text-align: end;
 }
 
 .about .contnet-about .text h3 {
@@ -527,30 +533,29 @@ color: #111;
   background-color: #a8a8a8;
   margin: 20px;
   border-radius: 25px;
+  overflow: hidden;
+
 }
 #works .container{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 #works .container .maps{
   width: 100%;
+  padding-right: 20rem;
+  overflow: hidden;
+  
 }
 
 #works .container .adress h3 {
   font-size: 35px;
-  text-align: end;
+  text-align: start;
   padding-bottom: 15px;
 }
-#works .container .adress .adress1 {
-  padding-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-}
+
 #works .container .adress p{
   padding-right: 10px;
-  text-align: end;
 }
 @media screen and (max-width: 800px) {
   #works .container{
@@ -558,16 +563,12 @@ color: #111;
   overflow: hidden;
 }
 #works .container .maps{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  padding-left: 50rem;
   padding-bottom: 50px;
 }
 
 #works .container .adress h3 {
   font-size: 35px;
-  text-align: end;
   padding-bottom: 15px;
 }
     
@@ -666,3 +667,4 @@ footer p a {
 }
 
 /* End Footer */
+
